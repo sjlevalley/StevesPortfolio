@@ -15,7 +15,7 @@ import githubIcon from '../images/githubIcon.svg'
 const useStyles = makeStyles((theme) => ({
   particlesCanvas: {
     position: "fixed",
-    opacity: "0.3"
+    opacity: "0.5"
   },
 }));
 
@@ -28,7 +28,7 @@ const Particles = () => {
       params={{
         particles: {
           number: {
-            value: 35,
+            value: 30,
             density: {
               enable: true,
               value_area: 900,
@@ -89,7 +89,7 @@ const Particles = () => {
             },
           },
           size: {
-            value: 30,
+            value: 20,
             random: true,
             anim: {
               enable: false,

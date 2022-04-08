@@ -15,7 +15,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import {
-  ArrowBack,
+  ArrowForward,
   Apps,
   AssignmentInd,
   ContactMail,
@@ -23,6 +23,7 @@ import {
 } from "@material-ui/icons"
 import { makeStyles } from "@material-ui/core/styles";
 import avatar from "../avatar.png";
+import { StyledClickableMenuDiv, StyledClickableNavDiv } from './subComponents/StyledClickableDivs'
 
 import Footer from "../components/Footer";
 
@@ -31,11 +32,14 @@ const useStyles = makeStyles((theme) => ({
     background: "#222",
     margin: 0,
   },
-  backArrow: {
+  forwardArrow: {
     color: "tomato",
   },
   title: {
     color: "tan",
+  },
+  toolBar: {
+    justifyContent: 'end'
   },
   menuSliderContainer: {
     width: 250,
@@ -71,19 +75,22 @@ const Navbar = () => {
       <Divider />
       <List>
         {menuItems.map((item, i) => (
-          <ListItem
-            button
-            key={i}
-            className={classes.listItem}
-            onClick={() => setOpen(false)}
-            component={Link}
-            to={item.listPath}
-          >
-            <ListItemIcon className={classes.listItem}>
-              {item.listIcon}
-            </ListItemIcon>
-            <ListItemText primary={item.listText} />
-          </ListItem>
+          <StyledClickableMenuDiv>
+            <ListItem
+              button
+              key={i}
+              className={classes.listItem}
+              onClick={() => setOpen(false)}
+              component={Link}
+              to={item.listPath}
+            >
+              <ListItemIcon className={classes.listItem}>
+                {item.listIcon}
+              </ListItemIcon>
+              <ListItemText primary={item.listText} />
+            </ListItem>
+
+          </StyledClickableMenuDiv>
         ))}
       </List>
     </Box>
@@ -93,13 +100,15 @@ const Navbar = () => {
     <React.Fragment>
       <Box component="nav">
         <AppBar position="static" className={classes.appbar}>
-          <Toolbar>
-            <IconButton onClick={() => setOpen(true)}>
-              <ArrowBack className={classes.backArrow} />
-            </IconButton>
-            <Typography variant="h5" className={classes.title}>
-              Portfolio
-            </Typography>
+          <Toolbar className={classes.toolBar}>
+            <StyledClickableNavDiv onClick={() => setOpen(true)}>
+              <Typography variant="h5" className={classes.title}>
+                Portfolio
+              </Typography>
+              <IconButton >
+                <ArrowForward className={classes.forwardArrow} />
+              </IconButton>
+            </StyledClickableNavDiv>
           </Toolbar>
         </AppBar>
       </Box>
