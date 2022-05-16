@@ -115,9 +115,9 @@ const Portfolio = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
+                {/* <Button size="small" color="primary">
                   Share
-                </Button>
+                </Button> */}
                 <Button size="small" color="primary">
                   <a href={project.link}>Live Demo</a>
                 </Button>
