@@ -11,6 +11,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
 import project1 from "../images/html-css-javascript-lg.jpg";
+import EchoScreenshot from '../images/portfolioScreenshots/EchoScreenshot.png'
 import project2 from "../images/html-css-javascript.jpg";
 import project3 from "../images/javascript-fullstack.jpg";
 import project4 from "../images/mern-stack.jpg";
@@ -24,58 +25,67 @@ const useStyles = makeStyles((theme) => ({
   },
   cardContainer: {
     maxWidth: 345,
+    height: 350,
     margin: "3rem auto",
   },
+  content: {
+    height: '170px'
+  }
 }));
+
+const echo = `https://echo-726ac.firebaseapp.com/signup`
 
 const projects = [
   {
-    name: "Project 1",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-    consequatur magni quod nesciunt necessitatibus molestiae non
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus
-    iste alias sunt veritatis nisi dolores!`,
-    image: project1,
+    name: "Echo - A Social Media App",
+    description: `This is a fully functional social media app roughly based on Twitter's functionality.`,
+    image: EchoScreenshot,
+    link: echo
   },
   {
     name: "Project 2",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.Quis\
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
     iste alias sunt veritatis nisi dolores!`,
     image: project2,
+    link: echo
   },
   {
     name: "Project 3",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.Quis\
+  consequatur magni quod nesciunt necessitatibus molestiae non\
+  eligendi, magnam est aliquam recusandae ? Magnam soluta minus\
+  iste alias sunt veritatis nisi dolores!`,
     image: project3,
+    link: echo
   },
   {
     name: "Project 4",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.Quis\
+  consequatur magni quod nesciunt necessitatibus molestiae non\
+  eligendi, magnam est aliquam recusandae ? Magnam soluta minus\
+  iste alias sunt veritatis nisi dolores!`,
     image: project4,
+    link: echo
   },
   {
     name: "Project 5",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.Quis\
+  consequatur magni quod nesciunt necessitatibus molestiae non\
+  eligendi, magnam est aliquam recusandae ? Magnam soluta minus\
+  iste alias sunt veritatis nisi dolores!`,
     image: project5,
+    link: echo
   },
   {
     name: "Project 6",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.Quis\
+  consequatur magni quod nesciunt necessitatibus molestiae non\
+  eligendi, magnam est aliquam recusandae ? Magnam soluta minus\
+  iste alias sunt veritatis nisi dolores!`,
     image: project6,
+    link: echo
   },
 ];
 
@@ -91,11 +101,11 @@ const Portfolio = () => {
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  alt="Project 1"
+                  alt={project.name}
                   height="140"
                   image={project.image}
                 />
-                <CardContent>
+                <CardContent className={classes.content}>
                   <Typography variant="h5" gutterBottom>
                     {project.name}
                   </Typography>
@@ -109,7 +119,7 @@ const Portfolio = () => {
                   Share
                 </Button>
                 <Button size="small" color="primary">
-                  Live Demo
+                  <a href={project.link}>Live Demo</a>
                 </Button>
               </CardActions>
             </Card>
