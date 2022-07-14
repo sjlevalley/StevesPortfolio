@@ -12,8 +12,8 @@ import Typography from "@material-ui/core/Typography";
 
 import EchoScreenshot from '../images/portfolioScreenshots/EchoScreenshot.png'
 import TodoistScreenshot from '../images/portfolioScreenshots/TodoistScreenshot.png'
-import project3 from "../images/javascript-fullstack.jpg";
-import project4 from "../images/mern-stack.jpg";
+import StevesFineDining from '../images/portfolioScreenshots/StevesFineDining.png'
+import AmazonCloneScreenshot from '../images/portfolioScreenshots/AmazonCloneScreenshot.png'
 import project5 from "../images/react-redux.jpg";
 import project6 from "../images/react.png";
 
@@ -34,37 +34,33 @@ const useStyles = makeStyles((theme) => ({
 
 const echo = 'https://echo-726ac.firebaseapp.com/signup'
 const todoist = 'https://todoist-2db6b.web.app/'
+const fineDining = 'https://sjlevalley.github.io/StevesFineDining/'
+const amazonClone = 'https://clone-c04a7.web.app/'
 
 const projects = [
   {
     name: "Echo - A Social Media App",
-    description: `This is a fully functional social media app roughly based on Twitter's functionality.`,
+    description: `This site combines React, Redux, and Firebase to create a fully functional social media app roughly based on Twitter's functionality. `,
     image: EchoScreenshot,
     link: echo
   },
   {
     name: "Todoist Clone",
-    description: 'This is a task organization app based off of the Todoist website',
+    description: 'This is a task organization app based off of the Todoist website. The technologies used in this site include React with Redux Toolkit for state management, Firebase, and incorporates the Material UI Framework for the design.',
     image: TodoistScreenshot,
     link: todoist
   },
   {
-    name: "Project 3",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.Quis\
-  consequatur magni quod nesciunt necessitatibus molestiae non\
-  eligendi, magnam est aliquam recusandae ? Magnam soluta minus\
-  iste alias sunt veritatis nisi dolores!`,
-    image: project3,
-    link: echo
+    name: "Steve's Fine Dining",
+    description: `Delicious Food, Fresh out of the oven! This app is a basic food ordering app with a shopping cart. It was created with React, React Context for state management.`,
+    image: StevesFineDining,
+    link: fineDining
   },
   {
-    name: "Project 4",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.Quis\
-  consequatur magni quod nesciunt necessitatibus molestiae non\
-  eligendi, magnam est aliquam recusandae ? Magnam soluta minus\
-  iste alias sunt veritatis nisi dolores!`,
-    image: project4,
-    link: echo
+    name: "Amazon Clone",
+    description: `This is a clone of the Amazon.com website, that incorporates React and Stripe to allow users to make real payments`,
+    image: AmazonCloneScreenshot,
+    link: amazonClone
   },
   {
     name: "Project 5",

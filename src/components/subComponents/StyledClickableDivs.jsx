@@ -1,7 +1,5 @@
 import React from "react";
-import { Box, IconButton, Typography } from "@material-ui/core";
-import { ArrowForward } from "@material-ui/icons";
-
+import { Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
