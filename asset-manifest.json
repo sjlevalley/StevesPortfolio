@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/mui-portfolio/static/css/main.c35d1ac8.chunk.css",
+    "main.js": "/mui-portfolio/static/js/main.9c0f0da5.chunk.js",
+    "main.js.map": "/mui-portfolio/static/js/main.9c0f0da5.chunk.js.map",
+    "runtime-main.js": "/mui-portfolio/static/js/runtime-main.021520e5.js",
+    "runtime-main.js.map": "/mui-portfolio/static/js/runtime-main.021520e5.js.map",
+    "static/js/2.dc4bd0ea.chunk.js": "/mui-portfolio/static/js/2.dc4bd0ea.chunk.js",
+    "static/js/2.dc4bd0ea.chunk.js.map": "/mui-portfolio/static/js/2.dc4bd0ea.chunk.js.map",
+    "index.html": "/mui-portfolio/index.html",
+    "precache-manifest.c07e90171f7ad0c81f661e86d50b454f.js": "/mui-portfolio/precache-manifest.c07e90171f7ad0c81f661e86d50b454f.js",
+    "service-worker.js": "/mui-portfolio/service-worker.js",
+    "static/css/main.c35d1ac8.chunk.css.map": "/mui-portfolio/static/css/main.c35d1ac8.chunk.css.map",
+    "static/js/2.dc4bd0ea.chunk.js.LICENSE.txt": "/mui-portfolio/static/js/2.dc4bd0ea.chunk.js.LICENSE.txt",
+    "static/media/AmazonCloneScreenshot.png": "/mui-portfolio/static/media/AmazonCloneScreenshot.fd1b543d.png",
+    "static/media/StevesFineDining.png": "/mui-portfolio/static/media/StevesFineDining.8148ab98.png",
+    "static/media/avatar.png": "/mui-portfolio/static/media/avatar.7c8e5f50.png",
+    "static/media/App.css": "/mui-portfolio/static/media/coffee-apple.2dd213aa.jpg",
+    "static/media/cssIcon.svg": "/mui-portfolio/static/media/cssIcon.9c9c21e8.svg",
+    "static/media/dockerIcon.svg": "/mui-portfolio/static/media/dockerIcon.353d2c74.svg",
+    "static/media/githubIcon.svg": "/mui-portfolio/static/media/githubIcon.a6d8c48c.svg",
+    "static/media/htmlIcon.svg": "/mui-portfolio/static/media/htmlIcon.09ce7b6e.svg",
+    "static/media/javascriptIcon.svg": "/mui-portfolio/static/media/javascriptIcon.87711407.svg",
+    "static/media/nodeIcon.svg": "/mui-portfolio/static/media/nodeIcon.3a7e1b95.svg",
+    "static/media/postgresIcon.svg": "/mui-portfolio/static/media/postgresIcon.60d45ba4.svg",
+    "static/media/pythonIcon.svg": "/mui-portfolio/static/media/pythonIcon.573a25d2.svg",
+    "static/media/react-redux.jpg": "/mui-portfolio/static/media/react-redux.a8b012a0.jpg",
+    "static/media/react.png": "/mui-portfolio/static/media/react.f370c1e0.png",
+    "static/media/reactIcon.svg": "/mui-portfolio/static/media/reactIcon.3df930df.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.021520e5.js",
+    "static/js/2.dc4bd0ea.chunk.js",
+    "static/css/main.c35d1ac8.chunk.css",
+    "static/js/main.9c0f0da5.chunk.js"
+  ]
+}
