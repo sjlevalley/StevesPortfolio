@@ -1,7 +1,6 @@
 import React from "react";
-import Header from "./Header";
-import Particles from "./Particles";
-// import ImageParticles from "./ImageParticles";
+import Header from "./Header.jsx";
+import Particles from "./Particles.jsx";
 
 const Home = () => {
   return (

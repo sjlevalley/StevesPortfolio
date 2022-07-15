@@ -1,17 +1,17 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
-import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
-import Typed from "react-typed";
-import { makeStyles } from "@material-ui/core/styles";
 import avatar from "../avatar.png";
+import Box from "@material-ui/core/Box";
+import Grid from "@material-ui/core/Grid";
+import Typed from "react-typed";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
-    width: theme.spacing(15),
     height: theme.spacing(15),
     margin: theme.spacing(1),
+    width: theme.spacing(15),
   },
   title: {
     color: "tomato",
@@ -21,12 +21,12 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "uppercase",
   },
   typedContainer: {
+    left: "50%",
     position: "absolute",
     top: "50%",
-    left: "50%",
     transform: "translate(-50%,-50%)",
-    width: "100vw",
     textAlign: "center",
+    width: "100vw",
     zIndex: 1,
   },
 }));
@@ -40,14 +40,18 @@ const Header = () => {
         <Avatar className={classes.avatar} src={avatar} alt="Steve LeValley" />
       </Grid>
       <Typography className={classes.title} variant="h4">
-        <Typed strings={["Steve LeValley"]} typeSpeed={25} backSpeed={200} backDelay={6000} loop />
+        <Typed
+          strings={["Steve LeValley"]}
+          typeSpeed={25}
+          backSpeed={200}
+          backDelay={6000}
+          loop
+        />
       </Typography>
 
       <Typography className={classes.subtitle} variant="h5">
         <Typed
-          strings={[
-            "Full Stack Developer"
-          ]}
+          strings={["Full Stack Developer"]}
           typeSpeed={40}
           backSpeed={100}
           backDelay={3000}

@@ -1,21 +1,21 @@
 import React from "react";
-import { Particles as ReactParticles } from "react-particles-js";
-import { makeStyles } from "@material-ui/core/styles";
+import cssIcon from '../images/cssIcon.svg'
+import dockerIcon from '../images/dockerIcon.svg'
+import githubIcon from '../images/githubIcon.svg'
+import htmlIcon from '../images/htmlIcon.svg'
 import javascriptIcon from '../images/javascriptIcon.svg'
+import nodeIcon from '../images/nodeIcon.svg'
+import postgresIcon from '../images/postgresIcon.svg'
 import pythonIcon from '../images/pythonIcon.svg'
 import reactIcon from '../images/reactIcon.svg'
-import postgresIcon from '../images/postgresIcon.svg'
-import dockerIcon from '../images/dockerIcon.svg'
-import htmlIcon from '../images/htmlIcon.svg'
-import cssIcon from '../images/cssIcon.svg'
-import nodeIcon from '../images/nodeIcon.svg'
-import githubIcon from '../images/githubIcon.svg'
+import { Particles as ReactParticles } from "react-particles-js";
+import { makeStyles } from "@material-ui/core/styles";
 
 
 const useStyles = makeStyles((theme) => ({
   particlesCanvas: {
+    opacity: "0.5",
     position: "fixed",
-    opacity: "0.5"
   },
 }));
 

@@ -2,10 +2,10 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Home from "./components";
-import Resume from "./components/Resume";
-import Navbar from "./components/Navbar";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
+import Resume from "./components/Resume.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Portfolio from "./components/Portfolio.jsx";
+import Contact from "./components/Contact.jsx";
 
 import "./App.css";
 

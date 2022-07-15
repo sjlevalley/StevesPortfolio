@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import avatar from "../avatar.png";
+import Footer from "./Footer.jsx";
 import {
   AppBar,
   Avatar,
@@ -19,13 +21,13 @@ import {
   Apps,
   AssignmentInd,
   ContactMail,
-  Home
-} from "@material-ui/icons"
+  Home,
+} from "@material-ui/icons";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../avatar.png";
-import { StyledClickableMenuDiv, StyledClickableNavDiv } from './subComponents/StyledClickableDivs'
-
-import Footer from "../components/Footer";
+import {
+  StyledClickableMenuDiv,
+  StyledClickableNavDiv,
+} from "./subComponents/StyledClickableDivs";
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
@@ -39,18 +41,18 @@ const useStyles = makeStyles((theme) => ({
     color: "tan",
   },
   toolBar: {
-    justifyContent: 'end'
+    justifyContent: "end",
   },
   menuSliderContainer: {
-    width: 250,
     background: "#511",
     height: "100%",
+    width: 250,
   },
   avatar: {
     display: "block",
     margin: "0.5rem auto",
-    width: theme.spacing(13),
     height: theme.spacing(13),
+    width: theme.spacing(13),
   },
   listItem: {
     color: "tan",
@@ -89,7 +91,6 @@ const Navbar = () => {
               </ListItemIcon>
               <ListItemText primary={item.listText} />
             </ListItem>
-
           </StyledClickableMenuDiv>
         ))}
       </List>
@@ -105,7 +106,7 @@ const Navbar = () => {
               <Typography variant="h5" className={classes.title}>
                 Portfolio
               </Typography>
-              <IconButton >
+              <IconButton>
                 <ArrowForward className={classes.forwardArrow} />
               </IconButton>
             </StyledClickableNavDiv>
