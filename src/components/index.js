@@ -4,10 +4,10 @@ import Particles from "./Particles.jsx";
 
 const Home = () => {
   return (
-    <React.Fragment>
+    <>
       <Header />
       <Particles />
-    </React.Fragment>
+    </>
   );
 };
 

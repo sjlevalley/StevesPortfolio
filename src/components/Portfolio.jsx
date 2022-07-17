@@ -10,12 +10,10 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
-import AmazonCloneScreenshot from '../images/portfolioScreenshots/AmazonCloneScreenshot.png'
-import EchoScreenshot from '../images/portfolioScreenshots/EchoScreenshot.png'
-import StevesFineDining from '../images/portfolioScreenshots/StevesFineDining.png'
-import TodoistScreenshot from '../images/portfolioScreenshots/TodoistScreenshot.png'
-import project5 from "../images/react-redux.jpg";
-import project6 from "../images/react.png";
+import AmazonCloneScreenshot from "../images/portfolioScreenshots/AmazonCloneScreenshot.png";
+import EchoScreenshot from "../images/portfolioScreenshots/EchoScreenshot.png";
+import StevesFineDining from "../images/portfolioScreenshots/StevesFineDining.png";
+import TodoistScreenshot from "../images/portfolioScreenshots/TodoistScreenshot.png";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -28,57 +26,40 @@ const useStyles = makeStyles((theme) => ({
     height: 350,
   },
   content: {
-    height: '170px'
-  }
+    height: "170px",
+  },
 }));
 
-const echo = 'https://echo-726ac.firebaseapp.com/signup'
-const todoist = 'https://todoist-2db6b.web.app/'
-const fineDining = 'https://sjlevalley.github.io/StevesFineDining/'
-const amazonClone = 'https://clone-c04a7.web.app/'
+const echo = "https://echo-726ac.firebaseapp.com/signup";
+const todoist = "https://todoist-2db6b.web.app/";
+const fineDining = "https://sjlevalley.github.io/StevesFineDining/";
+const amazonClone = "https://clone-c04a7.web.app/";
 
 const projects = [
   {
     name: "Amazon Clone",
     description: `This is a clone of the Amazon.com website, that incorporates React and Stripe to allow users to make real payments`,
     image: AmazonCloneScreenshot,
-    link: amazonClone
+    link: amazonClone,
   },
   {
     name: "Todoist Clone",
-    description: 'This is a task organization app based off of the Todoist website. The technologies used in this site include React with Redux Toolkit for state management, Firebase, and incorporates the Material UI Framework for the design.',
+    description:
+      "This is a task organization app based off of the Todoist website. The technologies used in this site include React with Redux Toolkit for state management, Firebase, and incorporates the Material UI Framework for the design.",
     image: TodoistScreenshot,
-    link: todoist
+    link: todoist,
   },
   {
     name: "Echo - A Social Media App",
     description: `This site combines React, Redux, and Firebase to create a fully functional social media app roughly based on Twitter's functionality. `,
     image: EchoScreenshot,
-    link: echo
+    link: echo,
   },
   {
     name: "Steve's Fine Dining",
     description: `Delicious Food, Fresh out of the oven! This app is a basic food ordering app with a shopping cart. It was created with React, React Context for state management.`,
     image: StevesFineDining,
-    link: fineDining
-  },
-  {
-    name: "Project 5",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.Quis\
-  consequatur magni quod nesciunt necessitatibus molestiae non\
-  eligendi, magnam est aliquam recusandae ? Magnam soluta minus\
-  iste alias sunt veritatis nisi dolores!`,
-    image: project5,
-    link: echo
-  },
-  {
-    name: "Project 6",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.Quis\
-  consequatur magni quod nesciunt necessitatibus molestiae non\
-  eligendi, magnam est aliquam recusandae ? Magnam soluta minus\
-  iste alias sunt veritatis nisi dolores!`,
-    image: project6,
-    link: echo
+    link: fineDining,
   },
 ];
 
@@ -108,7 +89,13 @@ const Portfolio = () => {
               </CardActionArea>
               <CardActions>
                 <Button size="small" color="primary">
-                  <a href={project.link} target='_blank' rel="noopener noreferrer">View Live Site</a>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Live Site
+                  </a>
                 </Button>
               </CardActions>
             </Card>
