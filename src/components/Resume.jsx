@@ -166,7 +166,8 @@ const Resume = () => {
             At iSpot.tv, I work as a Software Engineer as part of a Software
             Engineering team that is involved with many different projects,
             which incorporate many different technologies. These technologies
-            include JavaScript, Node.js, React.js, Python, Postgres, Redis.
+            include, but are not limited to JavaScript, Node.js, React.js,
+            Python, Postgres, Redis.
           </Typography>
         </Box>
         <Typography
