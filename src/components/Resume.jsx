@@ -41,16 +41,6 @@ const useStyles = makeStyles((theme) => ({
       content: "''",
       position: "absolute",
     },
-    "&:before": {
-      borderColor: "tomato tomato transparent transparent",
-      borderStyle: "solid",
-      borderWidth: "0.625rem",
-      content: "''",
-      position: "absolute",
-      right: "-0.625rem",
-      top: "calc(50% - 5px)",
-      transform: "rotate(45deg)",
-    },
     [theme.breakpoints.up("md")]: {
       margin: "1rem",
       width: "44%",

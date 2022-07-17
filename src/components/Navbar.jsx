@@ -44,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
   name: {
     color: "tan",
     marginRight: "auto",
+    fontSize: "16px",
   },
   toolBar: {
     justifyContent: "end",
@@ -107,8 +108,8 @@ const Navbar = () => {
       <Box component="nav">
         <AppBar position="static" className={classes.appbar}>
           <Toolbar className={classes.toolBar}>
-            <Typography variant="h6" className={classes.name}>
-              Contact Me @ SLeValley@gmail.com
+            <Typography className={classes.name}>
+              Contact - SLeValley@gmail.com
             </Typography>
             <StyledClickableNavDiv onClick={() => setOpen(true)}>
               <Typography variant="h5" className={classes.title}>
