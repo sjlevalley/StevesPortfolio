@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import { Email, LinkedIn, GitHub } from "@material-ui/icons";
+import { GitHub } from "@material-ui/icons";
 
 const useStyles = makeStyles({
   bottomNavContainer: {
