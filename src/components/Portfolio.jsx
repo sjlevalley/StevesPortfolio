@@ -14,6 +14,7 @@ import AmazonCloneScreenshot from "../images/portfolioScreenshots/AmazonCloneScr
 import EchoScreenshot from "../images/portfolioScreenshots/EchoScreenshot.png";
 import StevesFineDining from "../images/portfolioScreenshots/StevesFineDining.png";
 import TodoistScreenshot from "../images/portfolioScreenshots/TodoistScreenshot.png";
+import theSaltyMariner from "../images/portfolioScreenshots/theSaltyMariner.png";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -34,18 +35,19 @@ const echo = "https://echo-726ac.firebaseapp.com/signup";
 const todoist = "https://todoist-2db6b.web.app/";
 const fineDining = "https://sjlevalley.github.io/StevesFineDining/";
 const amazonClone = "https://clone-c04a7.web.app/";
+const tsm = "https://www.thesaltymariner.com/";
 
 const projects = [
   {
     name: "Amazon Clone",
-    description: `This is a clone of the Amazon.com website, that incorporates React and Stripe to allow users to make real payments`,
+    description: `This is a clone of the Amazon.com website, that incorporates React, Redux Toolkit for State Management, Firebase, and Stripe to allow users to make real payments`,
     image: AmazonCloneScreenshot,
     link: amazonClone,
   },
   {
     name: "Todoist Clone",
     description:
-      "This is a task organization app based off of the Todoist website. The technologies used in this site include React with Redux Toolkit for state management, Firebase, and incorporates the Material UI Framework for the design.",
+      "This is a task organization app based off of the Todoist website. The technologies used in this site include React with Redux Toolkit for State Management, Firebase, and incorporates the Material UI Framework for the design.",
     image: TodoistScreenshot,
     link: todoist,
   },
@@ -54,6 +56,12 @@ const projects = [
     description: `This site combines React, Redux, and Firebase to create a fully functional social media app roughly based on Twitter's functionality. `,
     image: EchoScreenshot,
     link: echo,
+  },
+  {
+    name: "The Salty Mariner",
+    description: `This is a Next.js Blog Site that uses Redux Toolkit for State Management, and MongoDB for database services.`,
+    image: theSaltyMariner,
+    link: tsm,
   },
   {
     name: "Steve's Fine Dining",
