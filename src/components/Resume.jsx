@@ -68,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
   },
   timeLineYear: {
     background: "tomato",
-    borderRadius: '2px',
+    borderRadius: "2px",
     color: "#fff",
     fontSize: "1.2rem",
     lineHeight: 1,
@@ -133,10 +133,12 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            My prior career was as a Merchant Mariner, where I served onboard
+            both Government and Private sector ships as a U.S.C.G. Licensed
+            Marine Engineer. In this career, I dealt a lot with all aspects of
+            engineering machinery as it pertains to operating and maintaining
+            ships. These include, but are not limited to Mechanical, Electrical,
+            Electronic, and Automation systems.
           </Typography>
         </Box>
         <Typography
@@ -161,10 +163,10 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            At iSpot.tv, I work as a Software Engineer as part of a Software
+            Engineering team that is involved with many different projects,
+            which incorporate many different technologies. These technologies
+            include JavaScript, Node.js, React.js, Python, Postgres, Redis.
           </Typography>
         </Box>
         <Typography

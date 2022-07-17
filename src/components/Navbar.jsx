@@ -20,7 +20,7 @@ import {
   ArrowForward,
   Apps,
   AssignmentInd,
-  ContactMail,
+  // ContactMail,
   Home,
 } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/core/styles";
@@ -39,6 +39,11 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     color: "tan",
+    marginLeft: "auto",
+  },
+  name: {
+    color: "tan",
+    marginRight: "auto",
   },
   toolBar: {
     justifyContent: "end",
@@ -63,7 +68,7 @@ const menuItems = [
   { listIcon: <Home />, listText: "Home", listPath: "/" },
   { listIcon: <AssignmentInd />, listText: "Resume", listPath: "/resume" },
   { listIcon: <Apps />, listText: "Portfolio", listPath: "/portfolio" },
-  { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
+  // { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
 ];
 
 const Navbar = () => {
@@ -102,6 +107,9 @@ const Navbar = () => {
       <Box component="nav">
         <AppBar position="static" className={classes.appbar}>
           <Toolbar className={classes.toolBar}>
+            <Typography variant="h6" className={classes.name}>
+              Contact Me @ SLeValley@gmail.com
+            </Typography>
             <StyledClickableNavDiv onClick={() => setOpen(true)}>
               <Typography variant="h5" className={classes.title}>
                 Portfolio
