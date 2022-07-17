@@ -164,7 +164,7 @@ const Resume = () => {
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          Present
+          Current
         </Typography>
       </Box>
     </Box>
