@@ -167,7 +167,7 @@ const Resume = () => {
             Engineering team that is involved with many different projects,
             which incorporate many different technologies. These technologies
             include, but are not limited to JavaScript, Node.js, React.js,
-            Python, Postgres, Redis.
+            Python, Postgres, Redis, and AWS.
           </Typography>
         </Box>
         <Typography
