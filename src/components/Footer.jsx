@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import { Email, LinkedIn } from "@material-ui/icons"
+import { Email, LinkedIn, GitHub } from "@material-ui/icons";
 
 const useStyles = makeStyles({
   bottomNavContainer: {
@@ -24,9 +24,19 @@ const Footer = () => {
 
   return (
     <BottomNavigation className={classes.bottomNavContainer}>
-      {/* <BottomNavigationAction icon={<Facebook />} className={classes.root} /> */}
-      <BottomNavigationAction icon={<LinkedIn />} className={classes.root} />
-      <BottomNavigationAction icon={<Email />} className={classes.root} />
+      <BottomNavigationAction
+        icon={
+          <a
+            href="https://github.com/sjlevalley"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GitHub />
+          </a>
+        }
+        className={classes.root}
+      ></BottomNavigationAction>
+      {/* <BottomNavigationAction icon={<Email />} className={classes.root} /> */}
     </BottomNavigation>
   );
 };
