@@ -125,9 +125,9 @@ const Resume = () => {
           >
             My prior career was as a Merchant Mariner, where I served onboard
             both Government and Private sector ships as a U.S.C.G. Licensed
-            Marine Engineer. In this career, I dealt a lot with all aspects of
-            engineering machinery as it pertains to operating and maintaining
-            ships. These include, but are not limited to Mechanical, Electrical,
+            Marine Engineer. In this career, I dealt with all aspects of
+            operating and maintaining engineering machinery onboard ships. These
+            included, but were not limited to, Mechanical, Electrical,
             Electronic, and Automation systems.
           </Typography>
         </Box>
@@ -154,10 +154,10 @@ const Resume = () => {
             className={classes.subtitle1}
           >
             At iSpot.tv, I work as a Software Engineer as part of a Software
-            Engineering team that is involved with many different projects,
-            which incorporate many different technologies. These technologies
-            include, but are not limited to JavaScript, Node.js, React.js,
-            Python, Postgres, Redis, and AWS.
+            Engineering team that is responsible for many different projects
+            using a wide range of technologies. These technologies include, but
+            are not limited to JavaScript, Node.js, React.js, Python, Postgres,
+            Redis, and AWS.
           </Typography>
         </Box>
         <Typography
