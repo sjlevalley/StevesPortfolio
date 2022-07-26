@@ -6,6 +6,7 @@ import {
   AppBar,
   Avatar,
   Box,
+  Button,
   Divider,
   Drawer,
   IconButton,
@@ -14,6 +15,7 @@ import {
   ListItemIcon,
   ListItemText,
   Toolbar,
+  Tooltip,
   Typography,
 } from "@material-ui/core";
 import {
@@ -45,6 +47,11 @@ const useStyles = makeStyles((theme) => ({
     color: "tan",
     marginRight: "auto",
     fontSize: "16px",
+    backgroundColor: "transparent",
+    "&:hover, &:focus": {
+      backgroundColor: () => "tan",
+      color: "#222",
+    },
   },
   toolBar: {
     justifyContent: "end",
@@ -108,9 +115,17 @@ const Navbar = () => {
       <Box component="nav">
         <AppBar position="static" className={classes.appbar}>
           <Toolbar className={classes.toolBar}>
-            <Typography className={classes.name}>
-              Contact - SLeValley@gmail.com
-            </Typography>
+            <Tooltip title="Click to Copy">
+              <Button
+                variant="contained"
+                className={classes.name}
+                onClick={() =>
+                  window.navigator.clipboard.writeText("slevalley@gmail.com")
+                }
+              >
+                Contact - SLeValley@gmail.com
+              </Button>
+            </Tooltip>
             <StyledClickableNavDiv onClick={() => setOpen(true)}>
               <Typography variant="h5" className={classes.title}>
                 Portfolio
