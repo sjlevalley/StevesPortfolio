@@ -40,26 +40,28 @@ const aboutMeTextp2 =
   "These qualities are clearly demonstrated in my personal, educational, and career backgrounds as I have received awards, recommendations, and positive evaluations for my efforts in each of these parts of my life. Hard-work, and being quality-driven have been instilled in my ethos as a team member. I readily apply these traits, as well as my ever-improving Web-Development in a fast-paced, quality-driven environment.";
 
 const skills = [
-  "- JavaScript",
-  "- React.js/Redux",
-  "- Redux Saga/Redux Toolkit",
-  "- Next.js (SSR)",
-  "- Python",
-  "- SQL/NoSQL",
-  "- PostgreSQL",
-  "- Firebase",
-  "- Node",
+  "- AWS",
+  "- BitBucket",
+  "- Docker",
   "- Express",
   "- Flask",
-  "- MongoDB",
-  "- AWS",
-  "- Redis",
-  "- Docker",
-  "- React Testing Library",
-  "- Playwright",
-  "- Test Driven Development",
+  "- Firebase",
+  "- Git / GitHub",
+  "- GraphQL",
+  "- JavaScript",
   "- Jira",
-  "- Git/GitHub",
+  "- MongoDB",
+  "- Next.js (SSR)",
+  "- Node",
+  "- Playwright",
+  "- PostgreSQL",
+  "- Python",
+  "- React.js / Redux",
+  "- React Testing Library",
+  "- Redis",
+  "- Redux Saga / Redux Toolkit",
+  "- SQL / NoSQL",
+  "- Test Driven Development",
 ];
 
 const Header = () => {
@@ -68,7 +70,7 @@ const Header = () => {
   const skillsDataLeft = [];
   const skillsDataMiddle = [];
   const skillsDataRight = [];
-  skills.forEach((s, index) => {
+  skills.sort().forEach((s, index) => {
     if (index % 3 === 2) {
       skillsDataRight.push(
         <Typography className={classes.text} variant="h6">
@@ -162,6 +164,9 @@ const Header = () => {
         </Typography>
         <Typography className={classes.text} variant="h6">
           - Udemy - React, React Redux and Redux Saga (7 hrs)
+        </Typography>
+        <Typography className={classes.text} variant="h6">
+          - Udemy - Understanding TypeScript - 2022 Edition (15 hrs)
         </Typography>
         <br />
       </Box>
