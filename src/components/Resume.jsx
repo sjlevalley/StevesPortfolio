@@ -60,11 +60,11 @@ const useStyles = makeStyles((theme) => ({
     background: "tomato",
     borderRadius: "2px",
     color: "#fff",
-    fontSize: "1.2rem",
+    fontSize: "18px",
     lineHeight: 1,
     margin: "0 3rem 0 auto",
     maxWidth: "10rem",
-    padding: "0.5rem 1rem",
+    padding: "10px",
     textAlign: "center",
     "&:before": {
       display: "none",
@@ -164,7 +164,7 @@ const Resume = () => {
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          Current
+          December 2022
         </Typography>
       </Box>
     </Box>
