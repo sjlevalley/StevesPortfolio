@@ -108,19 +108,15 @@ const Resume = () => {
       </Typography>
       <Box component="div" className={classes.timeLine}>
         <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
+          <Typography variant="h5" align="left" className={classes.subHeading}>
             Marine Engineer
           </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
+          <Typography variant="body1" align="left" className={classes.body1}>
             Government / Private Sector
           </Typography>
           <Typography
             variant="subtitle1"
-            align="center"
+            align="left"
             className={classes.subtitle1}
           >
             My prior career was as a Merchant Mariner, where I served onboard
@@ -138,19 +134,15 @@ const Resume = () => {
           October 2021
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
+          <Typography variant="h5" align="left" className={classes.subHeading}>
             Software Engineer
           </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
+          <Typography variant="body1" align="left" className={classes.body1}>
             iSpot.tv
           </Typography>
           <Typography
             variant="subtitle1"
-            align="center"
+            align="left"
             className={classes.subtitle1}
           >
             At iSpot.tv, I work as a Software Engineer as part of a Software
@@ -166,6 +158,29 @@ const Resume = () => {
         >
           December 2022
         </Typography>
+        <Box component="div" className={classes.timeLineItem}>
+          <Typography variant="h5" align="left" className={classes.subHeading}>
+            Field Engineer / Software Engineer
+          </Typography>
+          <Typography variant="body1" align="left" className={classes.body1}>
+            Strategic Maintenance Solutions, Inc.
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            align="left"
+            className={classes.subtitle1}
+          >
+            As a Field Engineer, I was involved in the technical implementation
+            and installation of proprietary equipment dealing with Vibration
+            Analysis and the Condition Monitoring at industrial manufacturing
+            plants of many well-known companies throughout the United States. As
+            a Software Engineer, I developed methods and wrote programs using
+            Python to automate many of the tasks which were previously being
+            done by hand, saving valuable time and money, greatly improved
+            efficiency, and allowed for deliverables to be completed in a much
+            more timely manner.
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );
