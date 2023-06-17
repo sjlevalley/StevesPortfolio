@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   name: {
     color: "tan",
     marginRight: "auto",
-    fontSize: "16px",
+    fontSize: "12px",
     backgroundColor: "transparent",
     "&:hover, &:focus": {
       backgroundColor: () => "tan",
