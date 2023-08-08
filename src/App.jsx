@@ -16,12 +16,14 @@ function App() {
       <CssBaseline />
       <Navbar />
       <Switch>
-        {/* <Route exact path="/" component={Home} /> */}
         <Route exact path="/steve-levalley" component={Home} />
         <Route exact path="/resume" component={Resume} />
         <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/overview" component={Overview} />
         {/* <Route exact path="/contact" component={Contact} /> */}
+        <Route exact path="/">
+          <Redirect to="/steve-levalley" />
+        </Route>
         <Route exact path="*">
           <Redirect to="/steve-levalley" />
         </Route>

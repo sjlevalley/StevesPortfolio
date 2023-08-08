@@ -91,6 +91,29 @@ const Resume = () => {
           </Typography>
         </Box>
         <Typography variant="h2" className={`${classes.timeLineYear}`}>
+          July 2021
+        </Typography>
+        <Box component="div" className={classes.timeLineItem}>
+          <Typography variant="h5" align="left" className={classes.subHeading}>
+            Software Engineering Intern
+          </Typography>
+          <Typography variant="body1" align="left" className={classes.body1}>
+            Known Point Technologies
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            align="left"
+            className={classes.subtitle1}
+          >
+            Highly motivated software engineering intern with hands-on
+            experience in developing web applications using React.js, Python,
+            and integrating databases like PostgreSQL and Redis. Proficient in
+            deploying applications on Amazon Web Services (AWS) cloud platform.
+            Proven ability to work collaboratively in a team and deliver
+            high-quality code under tight deadlines.
+          </Typography>
+        </Box>
+        <Typography variant="h2" className={`${classes.timeLineYear}`}>
           October 2021
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
